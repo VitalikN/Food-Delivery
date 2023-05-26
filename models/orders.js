@@ -34,6 +34,7 @@ const userOrdersSchema = Joi.object({
   email: Joi.string().required(),
   phone: Joi.string().required(),
   address: Joi.string().required(),
+  product: Joi.array(),
 });
 
 const Orders = model("Orders", ordersSchema);
