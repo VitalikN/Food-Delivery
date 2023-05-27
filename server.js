@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const { DB_HOST } = require("./routes/config");
+const { DB_HOST } = require("./config");
 
 const app = require("./app");
 
