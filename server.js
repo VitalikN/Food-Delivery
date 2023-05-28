@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 
-// const { DB_HOST } = require("./config");
+const { DB_HOST } = process.env;
 
-const DB_HOST =
-  "mongodb+srv://Vitalii:Ad8WtrhM3MDrKKvA@cluster0.ietjxtl.mongodb.net/food-delivery?retryWrites=true&w=majority";
+console.log(process.env);
 
 const app = require("./app");
 
