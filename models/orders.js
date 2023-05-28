@@ -37,6 +37,6 @@ const userOrdersSchema = Joi.object({
   product: Joi.array(),
 });
 
-const Orders = model("Orders", ordersSchema);
+const Orders = model("orders", ordersSchema);
 
 module.exports = { Orders, userOrdersSchema };
