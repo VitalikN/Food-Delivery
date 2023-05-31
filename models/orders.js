@@ -19,10 +19,7 @@ const ordersSchema = new Schema(
       type: String,
       required: true,
     },
-    totalPrice: {
-      type: String,
-      required: true,
-    },
+    totalPrice: String,
 
     product: [
       {
@@ -41,7 +38,7 @@ const userOrdersSchema = Joi.object({
   phone: Joi.string().required(),
   address: Joi.string().required(),
   product: Joi.array(),
-  totalPrice: Joi.string().required(),
+  totalPrice: Joi.string(),
 });
 
 const Orders = model("orders", ordersSchema);
