@@ -19,13 +19,13 @@ const ordersSchema = new Schema(
       type: String,
       required: true,
     },
+    totalPrice: Number,
     product: [
       {
         restaurant: String,
         title: String,
         price: String,
         count: Number,
-        totalPrice: Number,
       },
     ],
   },
