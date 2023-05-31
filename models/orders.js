@@ -23,7 +23,9 @@ const ordersSchema = new Schema(
       {
         restaurant: String,
         title: String,
-        // price: String,
+        price: String,
+        count: Number,
+        totalPrice: Number,
       },
     ],
   },
