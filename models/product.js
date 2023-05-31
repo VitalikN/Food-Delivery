@@ -8,7 +8,7 @@ const productSchema = new Schema(
       required: true,
     },
     price: {
-      type: String,
+      type: Number,
       required: true,
     },
   },
@@ -21,7 +21,7 @@ const Product = model("product", productSchema);
 
 const productSchemaJoi = Joi.object({
   title: Joi.string().required(),
-  price: Joi.string().required(),
+  price: Joi.number().required(),
 });
 
 const schemas = {
